@@ -7,6 +7,8 @@ fun <T> Collection<T>.joinToString(
 ): String {
     val result = StringBuilder(prefix)
 
+    // this ссылается на объект-приемник:
+    // коллекцию элементов типа T
     for ((index, element) in this.withIndex()) {
         if (index > 0) result.append(separator)
         result.append(element)
