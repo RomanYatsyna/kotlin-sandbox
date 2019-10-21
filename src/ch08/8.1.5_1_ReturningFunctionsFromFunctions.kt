@@ -14,7 +14,8 @@ fun getShippingCostCalculator(
 }
 
 fun main(args: Array<String>) {
-    val calculator =
-        getShippingCostCalculator(Delivery.EXPEDITED)
-    println("Shipping costs ${calculator(Order(3))}")
+    val getExpeditedPrice = getShippingCostCalculator(Delivery.EXPEDITED)
+    val getStandardPrice = getShippingCostCalculator(Delivery.STANDARD)
+    println("Shipping costs ${getExpeditedPrice(Order(3))}")
+    println("Shipping costs ${getStandardPrice(Order(3))}")
 }

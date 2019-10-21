@@ -1,4 +1,4 @@
-group 'kotlin-in-action'
+group 'kotlin-sandbox'
 version '1.0-SNAPSHOT'
 
 buildscript {
